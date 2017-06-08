@@ -3,6 +3,7 @@ import { NavbarComponent} from './components/navbar/navbar.component'
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { RouterModule, RouterLink } from '@angular/router'
 
 @Component({
 	selector : 'my-app',
@@ -10,7 +11,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 					<navbar></navbar>
 					<jumbotron></jumbotron>
 					<div class="container">
-						<home></home>
+						<router-outlet></router-outlet>
 					</div>
 				</div>`
 
